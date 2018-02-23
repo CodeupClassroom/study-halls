@@ -1,0 +1,9 @@
+body, html {
+    height: 100%;
+}
+
+h1 {
+    font-family: cursive;
+    text-align: center;
+    margin: 2em 0;
+}
