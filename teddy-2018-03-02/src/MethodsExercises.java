@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class MethodsExercises {
+
+    public static void inspect(int i) {
+        System.out.println("This is an integer. It's value is: " + i);
+    }
+
     public static void main(String[] args) {
 
         int number1 = getInteger(1, 10);

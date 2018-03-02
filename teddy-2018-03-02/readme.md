@@ -26,7 +26,7 @@ anything)
 - Mostly used for nice console output (tables)
 - [Cheatsheet](http://web.cerritos.edu/jwilson/SitePages/java_language_resources/Java_printf_method_quick_reference.pdf)
     - [Alternate](https://alvinalexander.com/programming/printf-format-cheat-sheet)
-- Don't memorize this!
+- **Don't memorize this!**
 - def: a string that contains specially formatted placeholders that will be
   replaced with passed values
 - not used terribly much anymore, but almost every language has them (except javascript)
@@ -42,12 +42,26 @@ System.out.printf(
 
 ## Numeric Data Types in Java
 
+- Integer: `byte`, `short`, `int`, `long` -> "counting numbers" (no decimals)
+  (xs, sm, md, lg)
+- decimal numbers: `float`, `double`
+- characters: a single character `char`, multiple characters `String`
+- boolean
+
+For right now: when you need a numeric data type, just use `int` or `double`.
+
 ## Casting
 
 - Implicit: more precision, we don't have to go to any extra trouble, the case
   *implicitly* happens
+    - e.g. int -> double
 - Explicit: usually means we could be losing something, we must be *explicit* in
   order to make the cast happen
+    - e.g. double -> int
+
+> It's easier to make variables more precise in Java than it is to "widen" their data type scope.
+
+> It's easier to make *the data type* of variables more precise in Java than it is to "widen" their data type scope.
 
 ## Method Overloading Example
 
@@ -57,7 +71,7 @@ public static void inspect(int i) {
 }
 
 public static void inspect(double d) {
-    System.out.println("This is a double. It's value is: " + double);
+    System.out.println("This is a double. It's value is: " + d);
 }
 
 public static void inspect(String s) {
@@ -82,7 +96,7 @@ public static void main(String[] args) {
 public static WeatherForecast getWeather(Date day) {
     return queryWeatherApi(day);
 }
-public static WeatherForecase getWeather() {
+public static WeatherForecast getWeather() {
     Date today = new Date();
     return getWeather(today);
 }
