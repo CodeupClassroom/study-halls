@@ -1,0 +1,10 @@
+# IntelliJ
+*.iml
+.idea/
+
+# Mac
+.DS_Store
+
+node_modules
+out
+target
