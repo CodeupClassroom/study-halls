@@ -1,3 +1,0 @@
-# Ulysses Study Hall
-
-
