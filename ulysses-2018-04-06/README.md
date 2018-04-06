@@ -16,9 +16,9 @@
 Example
 
 ```js
-let coffees
-let storage = window.localStorage
-let persistedCoffees = storage.getItem('coffees')
+var coffees
+var storage = window.localStorage
+var persistedCoffees = storage.getItem('coffees')
 
 // check to see if we have any data (.getItem will return `null` if the supplied
 // key is not found)
@@ -34,7 +34,7 @@ if (persistedCoffees) {
 
 
 // adding a new coffee
-let newCoffee = {
+var newCoffee = {
     name: document.querySelector('#new-coffee-name').value,
     roast: document.querySelector('#new-coffee-roast').value
 }
@@ -45,3 +45,29 @@ storage.setItem('coffees', JSON.stringify(coffees))
 - [See also the guide from MDN here][local-storage-guide]
 
 [local-storage-guide]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
+
+
+## Array Element Access
+
+```js
+var numbers = [1, 2, 3, 4, 5]
+
+var anElement = numbers[2]
+
+// creating an array based on numbers, but with only even numbers
+
+// 1. start with an new empty array
+var evenNumbers = []
+
+// 2. loop through the array and "look at" each element
+number.forEach(function(number) {
+    // 3. if the given element meets our criteria, add it to the new array
+    if (number % 2 === 0) {
+        evensNumbers.push(number)
+    }
+})
+
+// done! evenNumbers has all the even numbers
+```
+
+document.getElementBy.... is for DOM manipulation
